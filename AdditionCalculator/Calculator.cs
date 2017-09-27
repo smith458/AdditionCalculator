@@ -59,10 +59,7 @@ namespace AdditionCalculator
             int limit = Math.Abs(a);
             int step = Math.Abs(b);
 
-            if (b == 0)
-            {
-                throw new DivideByZeroException("Not-defined");
-            }
+            if (b == 0) { throw new DivideByZeroException("Not-defined"); }
             
             while (limit > 0)
             {
@@ -81,10 +78,7 @@ namespace AdditionCalculator
                     return Subtract(0, count);
                 }
             }
-            else
-            {
-                throw new ArgumentException("Non-integral answer");
-            }
+            else { throw new ArgumentException("Non-integral answer"); }
         }
     }
 }
