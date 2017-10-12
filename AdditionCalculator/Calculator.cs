@@ -80,5 +80,22 @@ namespace AdditionCalculator
             }
             else { throw new ArgumentException("Non-integral answer"); }
         }
+
+        public static int Exponent(int a, int b)
+        {
+            if (b < 0)
+            {
+                throw new ArgumentException("Non-integral answer");
+            }
+
+            int count = 1;
+
+            for (int x = 0; x < b; ++x)
+            {
+                count *= Multiply(a, 1);
+            }
+
+            return count;
+        }
     }
 }

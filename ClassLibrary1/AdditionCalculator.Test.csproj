@@ -49,6 +49,10 @@
     <Compile Include="Division_Tests\When_dividing_non_integer.cs" />
     <Compile Include="Division_Tests\When_dividing_positive_integer.cs" />
     <Compile Include="Division_Tests\When_dividing_zero.cs" />
+    <Compile Include="Exponent_Tests\When_power_negative.cs" />
+    <Compile Include="Exponent_Tests\When_power_one.cs" />
+    <Compile Include="Exponent_Tests\When_power_positive.cs" />
+    <Compile Include="Exponent_Tests\When_power_zero.cs" />
     <Compile Include="Multiplication_Tests\When_multiplying_negatives.cs" />
     <Compile Include="Multiplication_Tests\When_multiplying_positives.cs" />
     <Compile Include="Multiplication_Tests\When_multiplying_zeroes.cs" />

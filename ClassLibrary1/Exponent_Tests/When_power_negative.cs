@@ -7,30 +7,31 @@ using System.Threading.Tasks;
 
 namespace AdditionCalculator.Test.Exponent_Tests
 {
-    class When_power_negative
+    [TestFixture]
+    public class When_power_negative
     {
-        public class When_power_one
+        [Test]
+        public void Exponent_one_to_the_negative()
         {
-            public void Exponent_one_to_the_negative()
-            {
-                Assert.Throws<ArgumentException>(delegate { Calculator.Exponent(1, -1); });
-            }
+            Assert.Throws<ArgumentException>(delegate { Calculator.Exponent(1, -1); });
+        }
 
-            public void Exponent_large_to_the_negative()
-            {
-                Assert.Throws<ArgumentException>(delegate { Calculator.Exponent(3, -4); });
-            }
+        [Test]
+        public void Exponent_large_to_the_negative()
+        {
+            Assert.Throws<ArgumentException>(delegate { Calculator.Exponent(3, -4); });
+        }
 
-            public void Exponent_negative_to_the_negative()
-            {
-                Assert.Throws<ArgumentException>(delegate { Calculator.Exponent(5, -3); });
-            }
+        [Test]
+        public void Exponent_negative_to_the_negative()
+        {
+            Assert.Throws<ArgumentException>(delegate { Calculator.Exponent(5, -3); });
+        }
 
-            public void Exponent_zero_to_the_negative()
-            {
-                var result = Calculator.Exponent(0, -2);
-                Assert.AreEqual(0, result);
-            }
+        [Test]
+        public void Exponent_zero_to_the_negative()
+        {
+            Assert.Throws<ArgumentException>(delegate { Calculator.Exponent(0, -2); });
         }
     }
 }
